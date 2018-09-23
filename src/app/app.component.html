@@ -1,0 +1,67 @@
+<main>
+  <div style="text-align:center">
+    <h1>
+      <!-- Welcome to {{ title }}! -->
+      In-Browser Linear Regression with TensorFlow.js
+    </h1>
+    <p>
+      This page performs a both training and inference on client side (i.e. directly in your browser) of a Linear
+      Regression model.
+      <br>It page learns a simple machine learning model which can then be used to predict a correct output based on
+      the learning data.
+      <br>The training values used for the model are according to a fuction y = -x. 40 data samples on the interval
+      [-10, 10] are used for training.
+      <br>Therefore, an input of x = 5 should generate an output y = -5.
+    </p>
+    <!-- width here can easily go up to 300 -->
+
+    <hr>
+
+    <table style="text-align: left; margin: 0px auto;">
+      <tr>
+        <th>
+          Input Value:
+        </th>
+        <th>
+          <input type="number" (change)="linearPrediction($event.target.value)">
+        </th>
+        <th>
+          <div class="note">(Click away to perform prediction)</div>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Predicted Value:
+        </th>
+        <th>
+          {{ prediction }}
+        </th>
+
+      </tr>
+      <!-- <button  -->
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <img width="60" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
+  </div>
+
+
+  <!-- <h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul> -->
+<div class="footer">
+  <p>This project was built by following the steps at this tutorial: https://angularfirebase.com/lessons/tensorflow-js-quick-start/</p>
+</div>
+</main>
